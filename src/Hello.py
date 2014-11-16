@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import os
 import functools
+import SysArgs as sa
 
 strs = r'''dgfdf\ghj\\gfh\n
     cfdfgdfg\\n
@@ -75,13 +76,13 @@ def add(x, y):
     
     return x + y
 
-def foo(x, y):
+def test(x, y):
     return x + 1, y + 1
 
 print add(1, 2)
 
-print foo(5, 10)
-x, y = foo(10, 20)
+print test(5, 10)
+x, y = test(10, 20)
 
 print x, y
 
@@ -192,3 +193,4 @@ print myFunc(1)
 myFunc5 = functools.partial(myFunc, y=5)
 print myFunc5(2)
 
+sa.test()

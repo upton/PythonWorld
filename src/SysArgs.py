@@ -8,7 +8,7 @@ Created on 2014年11月16日
 
 import sys
 
-def foo():
+def test():
     args = sys.argv
     if len(args) == 1:
         print 'hello world'
@@ -16,4 +16,4 @@ def foo():
         print 'hello %s' % args[1:]
         
 if __name__ == '__main__':
-    foo()
+    test()
