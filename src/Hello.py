@@ -3,7 +3,10 @@
 import os
 import functools
 import SysArgs as sa
+import logging
 
+# logging.basicConfig(level=logging.INFO, filename='hello.log')
+logging.basicConfig(level=logging.INFO)
 strs = r'''dgfdf\ghj\\gfh\n
     cfdfgdfg\\n
 \n
@@ -194,3 +197,21 @@ myFunc5 = functools.partial(myFunc, y=5)
 print myFunc5(2)
 
 sa.test()
+
+try:
+    print 'try...'
+    a = 10
+    b = 0
+    
+    assert b != 0, 'b is zero!'
+    r = a / b
+    print 'result:', r
+except StandardError, e:
+    logging.exception('errmsg %s', e)
+finally:
+    print 'finally...'
+print 'END'
+
+logging.debug('haha')
+logging.info('mmm')
+logging.warn('www')
