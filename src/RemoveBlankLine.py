@@ -6,7 +6,7 @@ Created on 2014年11月19日
 @author: upton
 '''
 def run():
-    detail = open("detail.vm", "r")
+    detail = open("detail_m.vm", "r")
     newDeatil = open("new.vm", "w")
     lines = detail.readlines()
 
