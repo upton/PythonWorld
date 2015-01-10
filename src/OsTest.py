@@ -5,9 +5,9 @@ import os
 import shutil as sh
 
 print os.name
-# print os.uname()  # Windows上是不能调用的
-print os.environ['path']
-print os.getenv('path', '123')
+print os.uname()  # Windows上是不能调用的
+print os.environ['PATH']
+print os.getenv('PATH', '123')
 print os.path.abspath('.')
 
 print os.path.join('/Users/michael', 'testdir')  
